@@ -1,0 +1,16 @@
+    /* Perbaiki lebar tabel dan align thead */
+    table#tblDataPenjualan{
+        width: 100%;
+        table-layout: fixed; /* Agar kolom otomatis menyesuaikan */
+        border-collapse: collapse;
+    }
+
+    table#tblDataPenjualan thead th {
+        text-align: left; /* Ratakan teks pada thead */
+    }
+
+    table#tblDataPenjualan tbody td {
+        white-space: nowrap; /* Hindari wrapping jika tabel terlalu panjang */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Tambahkan efek '...' jika terlalu panjang */
+    }
